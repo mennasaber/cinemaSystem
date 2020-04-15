@@ -1,0 +1,44 @@
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\bin\Debug\Cinema.exe.config
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\bin\Debug\Cinema.exe
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\bin\Debug\Cinema.pdb
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.Form1.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.exe
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.pdb
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.Form3.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.Form2.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.AddMovieUC.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.AddShow.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.HomeUC.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.Profile.resources
+c:\users\desktop\documents\visual studio 2015\Projects\Cinema\Cinema\obj\Debug\Cinema.SearchUC.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Cinema.exe.config
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Cinema.exe
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Cinema.pdb
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Form1.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Form2.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Form3.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.HomeUC.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Profile.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.SearchUC.resources
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.exe
+E:\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.pdb
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Cinema.exe.config
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.exe
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.pdb
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Cinema.exe
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Cinema.pdb
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Form1.resources
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Form2.resources
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Form3.resources
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.HomeUC.resources
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Profile.resources
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.SearchUC.resources
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Oracle.DataAccess.dll
+D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.CinemaUC.resources
