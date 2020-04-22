@@ -13,7 +13,7 @@ namespace Cinema
 {
     public partial class HomeUC : UserControl
     {
-        string connString = "Data source=orcl;User Id=scott; Password=tiger;";
+        string connString = "Data source=orcl;User Id=hr; Password=hr;";
         public HomeUC()
         {
             InitializeComponent();

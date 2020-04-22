@@ -50,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CinemaUC.cs">
+    <Compile Include="AddCinema.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CinemaUC.Designer.cs">
-      <DependentUpon>CinemaUC.cs</DependentUpon>
+    <Compile Include="AddCinema.Designer.cs">
+      <DependentUpon>AddCinema.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,8 @@
     <Compile Include="SearchUC.Designer.cs">
       <DependentUpon>SearchUC.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CinemaUC.resx">
-      <DependentUpon>CinemaUC.cs</DependentUpon>
+    <EmbeddedResource Include="AddCinema.resx">
+      <DependentUpon>AddCinema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

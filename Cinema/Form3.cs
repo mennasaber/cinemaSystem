@@ -61,11 +61,31 @@ namespace Cinema
             button5.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.exit));
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void button6_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            CinemaUC cinema = new CinemaUC();
-            panel1.Controls.Add(cinema);
+            AddCinema Cinema = new AddCinema();
+            panel1.Controls.Add(Cinema);
         }
     }
 }
