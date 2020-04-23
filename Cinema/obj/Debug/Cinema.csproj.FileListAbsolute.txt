@@ -42,8 +42,9 @@ D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Deb
 D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
 D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\bin\Debug\Oracle.DataAccess.dll
 D:\NoNa\Third year\second term\Cinema-20200405T183404Z-001\Cinema\Cinema\obj\Debug\Cinema.CinemaUC.resources
-D:\ripository-file-git-cinema-try1\Cinema\bin\Debug\Cinema.exe
 D:\ripository-file-git-cinema-try1\Cinema\bin\Debug\Cinema.exe.config
+D:\ripository-file-git-cinema-try1\Cinema\bin\Debug\Cinema.exe
+D:\ripository-file-git-cinema-try1\Cinema\bin\Debug\Cinema.pdb
 D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.AddCinema.resources
 D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.Form1.resources
 D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.Form2.resources
@@ -56,5 +57,3 @@ D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.SearchUC.resources
 D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
 D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.exe
 D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.pdb
-D:\ripository-file-git-cinema-try1\Cinema\bin\Debug\Cinema.pdb
-D:\ripository-file-git-cinema-try1\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache

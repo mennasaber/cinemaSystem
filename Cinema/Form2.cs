@@ -25,6 +25,7 @@ namespace Cinema
                 Form3 form = new Form3();
                 form.Show();
                 this.Hide();
+                
             }
             else
             {

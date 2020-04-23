@@ -54,7 +54,11 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.editCinHallNum = new System.Windows.Forms.NumericUpDown();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -136,7 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.editCinHallNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -271,7 +275,7 @@
             this.pictureBox19.BackColor = System.Drawing.Color.DarkOrchid;
             this.pictureBox19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.BackgroundImage")));
             this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox19.Location = new System.Drawing.Point(42, 139);
+            this.pictureBox19.Location = new System.Drawing.Point(42, 136);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(20, 21);
             this.pictureBox19.TabIndex = 66;
@@ -280,6 +284,7 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(151, 11);
             this.dataGridView1.Name = "dataGridView1";
@@ -297,7 +302,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(33, 130);
+            this.button9.Location = new System.Drawing.Point(33, 127);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(85, 38);
             this.button9.TabIndex = 65;
@@ -309,7 +314,7 @@
             // 
             this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(9, 85);
+            this.comboBox3.Location = new System.Drawing.Point(9, 83);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(134, 21);
             this.comboBox3.Sorted = true;
@@ -321,7 +326,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label26.ForeColor = System.Drawing.Color.Plum;
-            this.label26.Location = new System.Drawing.Point(6, 63);
+            this.label26.Location = new System.Drawing.Point(6, 61);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(77, 18);
             this.label26.TabIndex = 66;
@@ -331,7 +336,7 @@
             // 
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(8, 37);
+            this.comboBox2.Location = new System.Drawing.Point(8, 34);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(134, 21);
             this.comboBox2.Sorted = true;
@@ -343,7 +348,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label25.ForeColor = System.Drawing.Color.Plum;
-            this.label25.Location = new System.Drawing.Point(5, 13);
+            this.label25.Location = new System.Drawing.Point(5, 10);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(103, 18);
             this.label25.TabIndex = 64;
@@ -416,6 +421,7 @@
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(9, 45);
             this.dataGridView2.Name = "dataGridView2";
@@ -471,7 +477,11 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panel10.Controls.Add(this.editCinHallNum);
+            this.panel10.Controls.Add(this.button12);
+            this.panel10.Controls.Add(this.button11);
+            this.panel10.Controls.Add(this.button10);
+            this.panel10.Controls.Add(this.textBox1);
+            this.panel10.Controls.Add(this.dataGridView3);
             this.panel10.Controls.Add(this.pictureBox7);
             this.panel10.Controls.Add(this.pictureBox6);
             this.panel10.Controls.Add(this.pictureBox5);
@@ -492,19 +502,84 @@
             this.panel10.TabIndex = 10;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
-            // editCinHallNum
+            // button12
             // 
-            this.editCinHallNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editCinHallNum.Location = new System.Drawing.Point(45, 267);
-            this.editCinHallNum.Name = "editCinHallNum";
-            this.editCinHallNum.Size = new System.Drawing.Size(323, 29);
-            this.editCinHallNum.TabIndex = 64;
+            this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrchid;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Indigo;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Indigo;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Location = new System.Drawing.Point(220, 183);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(43, 41);
+            this.button12.TabIndex = 68;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(200, 202);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(20, 20);
+            this.button11.TabIndex = 67;
+            this.button11.Text = "      Delete";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Location = new System.Drawing.Point(200, 183);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(20, 20);
+            this.button10.TabIndex = 66;
+            this.button10.Text = "      Delete";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(34, 186);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(162, 33);
+            this.textBox1.TabIndex = 65;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(34, 233);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(228, 138);
+            this.dataGridView3.TabIndex = 64;
+            this.dataGridView3.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataGridView3_RowsRemoved);
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(44, 240);
+            this.pictureBox7.Location = new System.Drawing.Point(31, 161);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(18, 21);
             this.pictureBox7.TabIndex = 63;
@@ -514,7 +589,7 @@
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(48, 104);
+            this.pictureBox6.Location = new System.Drawing.Point(33, 90);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(18, 21);
             this.pictureBox6.TabIndex = 62;
@@ -525,9 +600,9 @@
             this.pictureBox5.BackColor = System.Drawing.Color.DarkOrchid;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(224, 347);
+            this.pictureBox5.Location = new System.Drawing.Point(289, 262);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(20, 21);
+            this.pictureBox5.Size = new System.Drawing.Size(19, 22);
             this.pictureBox5.TabIndex = 61;
             this.pictureBox5.TabStop = false;
             // 
@@ -536,7 +611,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.DarkOrchid;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(118, 346);
+            this.pictureBox3.Location = new System.Drawing.Point(288, 317);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(19, 21);
             this.pictureBox3.TabIndex = 60;
@@ -553,9 +628,9 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(108, 338);
+            this.button7.Location = new System.Drawing.Point(278, 307);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(84, 38);
+            this.button7.Size = new System.Drawing.Size(101, 42);
             this.button7.TabIndex = 59;
             this.button7.Text = "      Delete";
             this.button7.UseVisualStyleBackColor = false;
@@ -564,10 +639,10 @@
             // editCinName
             // 
             this.editCinName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editCinName.Location = new System.Drawing.Point(45, 129);
+            this.editCinName.Location = new System.Drawing.Point(213, 116);
             this.editCinName.Multiline = true;
             this.editCinName.Name = "editCinName";
-            this.editCinName.Size = new System.Drawing.Size(323, 33);
+            this.editCinName.Size = new System.Drawing.Size(166, 32);
             this.editCinName.TabIndex = 58;
             // 
             // comboBoxCINName
@@ -577,9 +652,9 @@
             this.comboBoxCINName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCINName.FormattingEnabled = true;
             this.comboBoxCINName.ItemHeight = 20;
-            this.comboBoxCINName.Location = new System.Drawing.Point(30, 47);
+            this.comboBoxCINName.Location = new System.Drawing.Point(30, 52);
             this.comboBoxCINName.Name = "comboBoxCINName";
-            this.comboBoxCINName.Size = new System.Drawing.Size(356, 28);
+            this.comboBoxCINName.Size = new System.Drawing.Size(349, 28);
             this.comboBoxCINName.Sorted = true;
             this.comboBoxCINName.TabIndex = 57;
             this.comboBoxCINName.SelectedIndexChanged += new System.EventHandler(this.getSelectedCinIDEdit);
@@ -589,7 +664,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Plum;
-            this.label22.Location = new System.Drawing.Point(27, 20);
+            this.label22.Location = new System.Drawing.Point(27, 25);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(104, 18);
             this.label22.TabIndex = 47;
@@ -599,7 +674,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(46, 171);
+            this.pictureBox2.Location = new System.Drawing.Point(214, 90);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(18, 21);
             this.pictureBox2.TabIndex = 46;
@@ -608,10 +683,10 @@
             // editCinLocation
             // 
             this.editCinLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editCinLocation.Location = new System.Drawing.Point(45, 195);
+            this.editCinLocation.Location = new System.Drawing.Point(30, 115);
             this.editCinLocation.Multiline = true;
             this.editCinLocation.Name = "editCinLocation";
-            this.editCinLocation.Size = new System.Drawing.Size(323, 33);
+            this.editCinLocation.Size = new System.Drawing.Size(166, 33);
             this.editCinLocation.TabIndex = 44;
             // 
             // label17
@@ -619,7 +694,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Plum;
-            this.label17.Location = new System.Drawing.Point(62, 242);
+            this.label17.Location = new System.Drawing.Point(49, 163);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(115, 18);
             this.label17.TabIndex = 31;
@@ -630,7 +705,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Plum;
-            this.label19.Location = new System.Drawing.Point(64, 173);
+            this.label19.Location = new System.Drawing.Point(232, 92);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(65, 18);
             this.label19.TabIndex = 29;
@@ -641,7 +716,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Plum;
-            this.label20.Location = new System.Drawing.Point(66, 105);
+            this.label20.Location = new System.Drawing.Point(51, 91);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(103, 18);
             this.label20.TabIndex = 27;
@@ -658,11 +733,11 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(215, 338);
+            this.button6.Location = new System.Drawing.Point(278, 252);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 38);
+            this.button6.Size = new System.Drawing.Size(102, 41);
             this.button6.TabIndex = 43;
-            this.button6.Text = "     Save";
+            this.button6.Text = "    Save   \r\n       Updates";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -1314,6 +1389,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -1321,7 +1397,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel9);
             this.Name = "AddCinema";
             this.Size = new System.Drawing.Size(1167, 489);
             this.Load += new System.EventHandler(this.AddCinema_Load);
@@ -1343,7 +1418,7 @@
             this.panel13.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.editCinHallNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1455,7 +1530,6 @@
         private System.Windows.Forms.Label count_seat;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.NumericUpDown editCinHallNum;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox17;
@@ -1478,5 +1552,10 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button button12;
     }
 }

@@ -15,9 +15,9 @@ namespace Cinema
     {
         string connString = "Data source=orcl;User Id=hr; Password=hr;";
         OracleConnection conn;
-        OracleDataAdapter adapter;
+        OracleDataAdapter adapter ,ad;
         List<int> cinemaIDs , HallIDs;
-        DataSet ds;
+        DataSet ds , ds2;
         int newC_id = 0 , newH_id = 0 , newS_id=0, hallCountL ,seatCountLabel , selectedEditCinId=1;
         public AddCinema()
         {
@@ -69,6 +69,7 @@ namespace Cinema
             comboBoxCINName.Items.Clear();
             comboBoxC_id.Items.Clear();
             comboBoxC_ID2.Items.Clear();
+            comboBox1.Items.Clear();
             getAllCinemaId_Name();
         }
         //************************** to get the new id *******************************************************
@@ -130,6 +131,12 @@ namespace Cinema
         public void getAllCinemaId_Name()
         {
             cinemaIDs.Clear();
+            comboBoxCINName.Items.Clear();
+            comboBoxC_id.Items.Clear();
+            comboBoxC_ID2.Items.Clear();
+            comboBox1.Items.Clear();
+            comboBox2.Items.Clear();
+
             OracleCommand c = new OracleCommand();
             c.Connection = conn;
             c.CommandText = "select CINID , cinname from cinema ";
@@ -277,7 +284,7 @@ namespace Cinema
                 selectedEditCinId = Convert.ToInt32(dr[0]);
                 editCinName.Text = dr[1].ToString();
                 editCinLocation.Text = dr[2].ToString();
-                editCinHallNum.Text = dr[3].ToString();
+                textBox1.Text = dr[3].ToString();
 
             }
             dr.Close();
@@ -301,11 +308,8 @@ namespace Cinema
                 comboBoxCINName.Text = "";
                 editCinName.Text = "";
                 editCinLocation.Text = "";
-                editCinHallNum.Text = "";
-                comboBoxCINName.Items.Clear();
-                comboBoxC_id.Items.Clear();
-                comboBoxC_ID2.Items.Clear();
-                comboBox1.Items.Clear();
+                textBox1.Text = "";
+             
                 getAllCinemaId_Name();
             }
         }
@@ -342,9 +346,9 @@ namespace Cinema
         // display data in datagridview after updating the selected item in combobox
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            string cmd = @"select * from hall where CINID = :id";
+            string cmd = @"select * from hall  where cinid = (select cinid from cinema where cinname = :name)";
             adapter = new OracleDataAdapter(cmd, connString);
-            adapter.SelectCommand.Parameters.Add("id", cinemaIDs.ElementAt(comboBox1.SelectedIndex));
+            adapter.SelectCommand.Parameters.Add("name", comboBox1.SelectedItem.ToString());
             ds = new DataSet();
             adapter.Fill(ds);
             dataGridView2.DataSource = ds.Tables[0];
@@ -353,7 +357,7 @@ namespace Cinema
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
+        }//############################################ menna saber check this 7etaaa cinemaIDs is not a correct proccess Ig ###############################################
         //************************************************* updating data in datagridview ***********************************************************
         private void dataGridView2_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
@@ -380,30 +384,76 @@ namespace Cinema
         // ************************update and edit seats data *******************************************************************
         private void button9_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int sum = 0;
-                for (int i = 0; i < dataGridView1.Rows.Count; ++i)
-                {
-                    sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
-                }
-                conn.Open();
-                OracleCommandBuilder builder = new OracleCommandBuilder(adapter);
-                adapter.Update(ds.Tables[0]);
-                OracleCommand cmd = new OracleCommand(@"update hall set Hallcapacity = :count", conn);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add("count", sum);
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+        //    try
+        //    {
+        //        int sum = 0;
+        //        for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+        //        {
+        //            sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
+        //        }
+        //        conn.Open();
+        //        OracleCommandBuilder builder = new OracleCommandBuilder(adapter);
+        //        adapter.Update(ds.Tables[0]);
+        //        OracleCommand cmd = new OracleCommand(@"update hall set Hallcapacity = :count", conn);
+        //        cmd.CommandType = CommandType.Text;
+        //        cmd.Parameters.Add("count", sum);
+        //        cmd.ExecuteNonQuery();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //   }
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            int num = 0;
+            num = Convert.ToInt32(textBox1.Text);
+            num++;
+            textBox1.Text = num.ToString();
+
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void dataGridView3_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            textBox1.Text = (dataGridView3.Rows.Count-1).ToString();
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string cmdStr = @"select * from hall  where cinid = (select cinid from cinema where cinname = :name)";
+                ad = new OracleDataAdapter(cmdStr, connString);
+                ad.SelectCommand.Parameters.Add("name", comboBoxCINName.SelectedItem.ToString());
+                ds2 = new DataSet();
+                ad.Fill(ds2);
+                dataGridView3.DataSource = ds2.Tables[0]; ;
+            }
+
+            catch { MessageBox.Show("No Record Found"); }
+
+            MessageBox.Show("please select which hall you want to remove ?");
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            OracleCommandBuilder orcleBuilder = new OracleCommandBuilder(ad);
+            ad.Update(ds2.Tables[0]);
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -419,14 +469,14 @@ namespace Cinema
         //*****************************************cinema update function******************************************************************************
         private void button6_Click(object sender, EventArgs e)
         {
-            if  (editCinName.Text != ""&& editCinLocation.Text != "" && editCinHallNum.Text != "") {
+            if  (editCinName.Text != ""&& editCinLocation.Text != "" && textBox1.Text != "") {
                 string caption = "cinema update confirmation";
                 OracleCommand cmd = new OracleCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = "update cinema set cinname =:name, cinlocation=:location ,hallCount=:hallcount where cinid=:id";
                 cmd.Parameters.Add("name", editCinName.Text);
                 cmd.Parameters.Add("location", editCinLocation.Text);
-                cmd.Parameters.Add("hallCount", Convert.ToInt32(editCinHallNum.Text.ToString()));
+                cmd.Parameters.Add("hallCount", Convert.ToInt32(textBox1.Text.ToString()));
                 cmd.Parameters.Add("id", selectedEditCinId);
                 int r = cmd.ExecuteNonQuery();
                 if (r != -1)
@@ -434,12 +484,9 @@ namespace Cinema
                     MessageBox.Show("Cinema is updated successfully ", caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     editCinName.Text = "";
                     editCinLocation.Text = "";
-                    editCinHallNum.Text = "";
-                    comboBoxCINName.Items.Clear();
-                    comboBoxC_id.Items.Clear();
-                    comboBoxC_ID2.Items.Clear();
-                    comboBox1.Items.Clear();
-                    comboBox2.Items.Clear();
+                    textBox1.Text = "";
+                    dataGridView3.Rows.Clear();
+                    dataGridView3.Refresh();
                     getAllCinemaId_Name();
                 }
               
