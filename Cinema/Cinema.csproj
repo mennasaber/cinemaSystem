@@ -80,6 +80,12 @@
     <Compile Include="HomeUC.Designer.cs">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie.designer.cs">
+      <DependentUpon>Movie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Profile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie.resx">
+      <DependentUpon>Movie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>

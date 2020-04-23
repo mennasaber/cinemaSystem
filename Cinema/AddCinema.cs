@@ -401,6 +401,11 @@ namespace Cinema
             }
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             string cmd = @"select * from seat where hallid = :id";

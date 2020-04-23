@@ -29,9 +29,21 @@ namespace Cinema
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 form = new Form3();
-            form.Show();
-            this.Hide();
+            if (textBox1.Text == "Rana" && textBox2.Text == "123")
+            {
+                
+                Form3 form = new Form3();    
+                form.Show();
+                this.Hide();
+            }
+            else
+            {
+                Form3 form = new Form3();
+                form.button6.Visible = false;
+                form.button7.Visible = false;
+                form.Show();
+                this.Hide();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -49,6 +61,11 @@ namespace Cinema
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

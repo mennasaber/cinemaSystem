@@ -87,5 +87,16 @@ namespace Cinema
             AddCinema Cinema = new AddCinema();
             panel1.Controls.Add(Cinema);
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            Movie movie = new Movie();
+            movie.TopLevel = false;
+            panel1.Controls.Add(movie);
+            movie.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            movie.Dock = DockStyle.Fill;
+            movie.Show();
+        }
     }
 }
